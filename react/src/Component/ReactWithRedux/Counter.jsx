@@ -17,7 +17,7 @@ export default function Counter() {
           color: "white",
           padding: "10px",
         }}
-        onClick={() => dispatch({ type: incrementCounter })}
+        onClick={() => dispatch({ type: incrementCounter, payload: 10 })}
       >
         Increment
       </button>
@@ -28,7 +28,7 @@ export default function Counter() {
           color: "white",
           padding: "10px",
         }}
-        onClick={() => dispatch({ type: decrementCounter })}
+        onClick={() => dispatch({ type: decrementCounter, payload: 5 })}
       >
         Decrement
       </button>

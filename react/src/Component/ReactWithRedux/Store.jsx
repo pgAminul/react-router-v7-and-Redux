@@ -18,10 +18,10 @@ const resetCounter = "RESET";
 const counterReducer = (state = initialState, action) => {
   switch (action.type) {
     case incrementCounter:
-      return { count: state.count + 1 };
+      return { count: state.count + action.payload };
 
     case decrementCounter:
-      return { count: state.count - 1 };
+      return { count: state.count - action.payload };
 
     case resetCounter:
       return { count: 0 };
